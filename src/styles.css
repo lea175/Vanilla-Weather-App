@@ -1,0 +1,39 @@
+ul{
+    list-style: none;
+    padding: 0px;
+}
+.bacic-info-wrapper{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.wrapper{
+    margin-top: 50px;
+    width: 600px;
+    border: 1px solid #8D8D8D;
+    padding: 20px;
+    font-family: "Google Sans",
+        arial,
+        sans-serif;
+    text-transform: capitalize;
+}
+.more-info-wrapper{
+    
+}
+#city{
+    color: #202124;
+    font-size: 22px;
+    line-height: 26px;
+}
+#temp{
+    font-size: 48px;
+    margin-left: 10px;
+}
+#icon{
+    position: relative;
+    top: -20px;
+}
+#units{
+    position: relative;
+    top: -25px;
+}

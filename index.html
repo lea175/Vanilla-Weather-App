@@ -11,10 +11,39 @@
 <link rel="stylesheet" href="src/styles.css">
 <body>
 <div class="container">
-    <h1>
-        hello world
-    </h1>
+<div class="wrapper">
+<div class="bacic-info-wrapper">
+    <div class="row">
+        <div class="col">
+            <ul>
+                <li id="city">Berlin</li>
+                <li id="currentDate">Thursday 18:20</li>
+                <li id="weather-condition">Cloudy</li>
+            </ul>
+        </div>
+    </div>
 </div>
-    <script src="src/app.js"></script>
+<div class="icon-temperature">
+    <div class="row">
+        <div class="col-6">
+            <span><img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                 alt="partly cloudy" id="icon"></span>
+            <span id="temp">12 </span><span id="units">C|F</span>
+        </div>
+
+        <div class="col-6">
+        <div class="more-info-wrapper">
+            <ul>
+            <li id="humidity">humidity = 12 %</li>
+            <li id="wind">wind = 10 km/h</li>
+        </ul>
+        </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>   
+ <script src="src/app.js"></script>
 </body>
 </html>
