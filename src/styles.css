@@ -17,10 +17,11 @@ ul{
     font-family: "Google Sans",
         arial,
         sans-serif;
-    text-transform: capitalize;
-}
-.more-info-wrapper{
+    }
     
+    li::first-letter{
+    text-transform: capitalize;
+
 }
 #city{
     color: #202124;
