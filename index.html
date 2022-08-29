@@ -13,17 +13,25 @@
 <body>
 <div class="container">
 <div class="wrapper">
-<div class="bacic-info-wrapper">
-    <div class="row">
-        <div class="col">
-            <ul>
-                <li id="city">new york</li>
-                <li id="date-current">Thursday 18:20</li>
-                <li id="weather-condition">Cloudy</li>
-            </ul>
+    <form id="search-form">
+        <div class="row">
+            <div class="col-6">
+                <input type="text" id="city-input" class="form-control"
+                placeholder="Type a city ..." autofocus autocomplete="off">
+            </div>
+            <div class="col-3">
+                <input type="submit"  id="search-button" value="Search"
+                 class="btn btn-outline-info">
+            </div>
         </div>
+    </form>
+    <div class="row">
+            <ul>
+                <li id="city"></li>
+                <li id="date-current"></li>
+                <li id="weather-condition"></li>
+            </ul>  
     </div>
-</div>
 <div class="icon-temperature">
     <div class="row">
         <div class="col-6">
@@ -35,8 +43,8 @@
         <div class="col-6">
         <div class="more-info-wrapper">
             <ul>
-            <li >humidity = <span id="humidity">12</span> %</li> 
-            <li>wind = <span id="wind">12</span> km/h</li>
+            <li >humidity = <span id="humidity"></span> %</li> 
+            <li>wind = <span id="wind"></span>km/h</li>
         </ul>
         </div>
         </div>

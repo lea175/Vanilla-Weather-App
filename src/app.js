@@ -31,12 +31,22 @@ icon.setAttribute("src",`http://openweathermap.org/img/wn/${response.data.weathe
 icon.setAttribute("alt", response.data.weather[0].description);
 }
 
-
-
-
-
-city = "Berlin"
+function search (city){
 let apiKey = "8193ca299e026ed6459f4b81cdd9bf21"
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
-
+   
 axios.get(apiUrl).then(displayTemperature);
+}
+
+function handleSubmit (event){
+    event.preventDefault();
+    let cityInput = document.querySelector("#city-input");
+    search(cityInput.value);
+}
+
+search("Sydney")
+
+let seachForm = document.querySelector("#search-form");
+seachForm.addEventListener("submit", handleSubmit);
+
+
