@@ -18,6 +18,12 @@ ul{
         arial,
         sans-serif;
     }
+    .weather-temperature .active{
+        color: black;
+        cursor: default;
+        text-decoration: none;
+    }
+
     
     li::first-letter{
     text-transform: capitalize;
