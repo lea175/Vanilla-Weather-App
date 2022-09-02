@@ -8,7 +8,7 @@ function formatDate(timestamp){
     if (minutes < 10){
        minutes =  `0${minutes}`
     }
-    let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thurday", "Friday", "Saturday"];
+    let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     let day = days[date.getDay()];
     return `${day} ${hours}:${minutes}`
 }
@@ -74,4 +74,4 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
-search("Sydney");
+search("Berlin");

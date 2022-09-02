@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="src/styles.css">
 <body>
 <div class="container">
+<div class="weather-app-wrapper">
 <div class="wrapper">
     <form id="search-form">
         <div class="row">
@@ -25,13 +26,15 @@
             </div>
         </div>
     </form>
+<div class="overwiev">
     <div class="row">
+        <h1 id="city"></h1>
             <ul>
-                <li id="city"></li>
                 <li id="date-current"></li>
                 <li id="weather-condition"></li>
             </ul>  
     </div>
+</div>
 <div class="icon-temperature">
     <div class="row">
         <div class="col-6">
@@ -54,8 +57,9 @@
     </div>
 </div>
 </div>
+<small><a href="https://github.com/lea175/Vanilla-Weather-App" target="_blank">Open sourced</a> by Lea Blatnik</small>
 </div>
-</div>   
+</div>
  <script src="src/app.js"></script>
 </body>
 </html>

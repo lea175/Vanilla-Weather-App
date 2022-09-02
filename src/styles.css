@@ -1,31 +1,40 @@
-ul{
-    list-style: none;
-    padding: 0px;
+li {
+        color: #70757a;
+        font-size: 16px;
+        line-height: 20px;
+        list-style: none;
+        padding: 0px;
 }
+
 .bacic-info-wrapper{
     margin-bottom: 20px;
     margin-top: 20px;
 }
+.weather-app-wrapper{
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
 
 .wrapper{
-    margin-top: 50px;
-    width: 600px;
+    padding: 20px 0px 0px 20px;
     border: 1px solid #8D8D8D;
     border-radius: 3px;
     box-shadow: 2px 2px 2px 1px rgba(204, 198, 198, 0.2);
-    padding: 20px;
     font-family: "Google Sans",
         arial,
         sans-serif;
     }
-    .weather-temperature .active{
-        color: black;
-        cursor: default;
-        text-decoration: none;
-    }
-
+.weather-temperature .active{
+    color: black;
+    cursor: default;
+    text-decoration: none;
+}
+.overwiev{
+    margin-bottom: 20px;
+}
     
-    li::first-letter{
+li::first-letter{
     text-transform: capitalize;
 
 }
@@ -33,10 +42,11 @@ ul{
     color: #202124;
     font-size: 22px;
     line-height: 26px;
+    margin-bottom: 0px;
 }
 #temp{
-    font-size: 48px;
-    margin-left: 10px;
+    font-size: 55px;
+    margin-left: 0px;
 }
 #icon{
     position: relative;
@@ -48,4 +58,22 @@ ul{
 }
 #search-form{
     margin-bottom: 20px;
+}
+a:link {
+    text-decoration: none;
+}
+
+
+a:visited {
+    text-decoration: none;
+}
+
+
+a:hover {
+    text-decoration: none;
+}
+
+
+a:active {
+    text-decoration: none;
 }
