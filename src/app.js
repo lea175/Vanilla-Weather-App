@@ -12,6 +12,24 @@ function formatDate(timestamp){
     let day = days[date.getDay()];
     return `${day} ${hours}:${minutes}`
 }
+function displayForecast(){
+    forecast = document.querySelector("#forecast");
+    
+    let forecastHTML =`<div class="row">`;
+    let days = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+    days.forEach(function(day){
+        forecastHTML = 
+         forecastHTML + `
+        <div class="col-2">
+            <span id="forecast-day">${day}</span>
+            <div><img src="http://openweathermap.org/img/wn/01d@2x.png" alt="forecast-icon" width="30px"></div>
+            <span id="temp-max">28°</span>
+            <span id="temp-min"> 16°</span>
+        </div>`;
+    })
+    forecastHTML = forecastHTML + `</div>`;
+    forecast.innerHTML = forecastHTML;
+}
 
 function displayTemperature(response){
 let city = document.querySelector("#city");
@@ -75,3 +93,4 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 search("Berlin");
+displayForecast();
