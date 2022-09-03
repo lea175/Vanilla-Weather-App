@@ -33,7 +33,20 @@ li {
 .overwiev{
     margin-bottom: 20px;
 }
-    
+.forecast-wrapper{
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 15px;
+    margin-top: 20px;
+    text-align: center;
+    padding-left: 0px;
+}
+.forecast-wrapper #forecast-day{
+    font-size: 15px;
+}
+.forecast-wrapper #temp-min{
+    opacity: 0.8;
+}
 li::first-letter{
     text-transform: capitalize;
 
