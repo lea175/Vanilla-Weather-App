@@ -10,7 +10,7 @@ function formatDate(timestamp){
     }
     let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     let day = days[date.getDay()];
-    return `${day} ${hours}:${minutes}`
+    return `Last updated: ${day} ${hours}:${minutes}`
 }
 function formatTime(timestamp){
     let date = new Date(timestamp*1000);
@@ -26,7 +26,7 @@ function displayForecast(response){
     
     let forecastHTML =`<div class="row">`;
     forecast.forEach(function(forecastDay, index){
-        if (index > 0 && index < 7) {
+        if (index < 6) {
             
             forecastHTML = 
             forecastHTML + `
